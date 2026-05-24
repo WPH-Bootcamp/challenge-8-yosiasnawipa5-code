@@ -19,7 +19,71 @@
  * Button variant types
  * Gunakan ini untuk Button component
  */
-export type ButtonVariant = 'primary' | 'secondary' | 'outline';
+// ----Navigation
+export interface NavItem {
+  label: string;
+  href: string;
+}
+
+// -----About
+export interface StatItem {
+  value: string;
+  label: string;
+}
+export interface BrandItem {
+  name: string;
+}
+export interface ProcessStep {
+  id: number;
+  title: string;
+  description: string;
+}
+
+// ----Services
+export interface ServiceItem {
+  id: number;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+// ---- Portfolio
+export interface PortfolioItem {
+  id: number;
+  title: string;
+  category: string;
+  imageGradient: string;
+  label: string;
+}
+
+// ----- Testimonials
+export interface TestimonialItem {
+  id: number;
+  quote: string;
+  name: string;
+  role: string;
+  rating: number;
+}
+
+// ---- FAQ
+export interface FaqItem {
+  id: number;
+  question: string;
+  answer: string;
+}
+
+// --- Contact Form
+export interface ContactFormData {
+  name: string;
+  email: string;
+  service: string;
+  message: string;
+}
+
+// ------ Button
+export type Buttonsize = "sm" | "md" | "lg";
+
+export type ButtonVariant = "primary" | "outline" | "ghost";
 
 /**
  * Example: Button Props
