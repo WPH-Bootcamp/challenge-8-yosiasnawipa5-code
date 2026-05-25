@@ -8,25 +8,28 @@
  *
  * Current: Placeholder untuk testing Tailwind setup
  */
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import HomePage from "./pages/HomePage";
 
-function App() {
-  return (
-    <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4">
-          Company Profile Assignment
-        </h1>
-        <p className="text-lg text-gray-600 mb-6">
-          Start building your components!
-        </p>
-        <div className="space-y-2 text-sm text-gray-500">
-          <p>TailwindCSS configured</p>
-          <p>Folder structure ready</p>
-          <p>Check README.md for instructions</p>
-        </div>
-      </div>
-    </div>
-  );
-}
+// ─── App ──────────────────────────────────────────────────────────────────────
+// Root component: Navbar (fixed) + main content + Footer.
+
+const App = () => (
+  <div className="min-h-screen bg-[#0a0a0a] text-white">
+    {/* Skip to content link untuk keyboard navigation */}
+    <a
+      href="#main-content"
+      className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[100]
+        focus:px-4 focus:py-2 focus:bg-orange-500 focus:text-white focus:rounded-lg focus:font-semibold"
+    >
+      Skip to main content
+    </a>
+
+    <Navbar />
+    <HomePage />
+    <Footer />
+  </div>
+);
 
 export default App;
