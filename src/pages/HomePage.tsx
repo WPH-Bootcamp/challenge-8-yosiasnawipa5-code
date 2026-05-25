@@ -1,5 +1,5 @@
 import HeroSection         from "../components/sections/HeroSection";
-import AboutSection        from "../components/sections/AboutSection";
+import StatsSection        from "../components/sections/StatsSection";
 import ServicesSection     from "../components/sections/ServicesSection";
 import IndustrySection     from "../components/sections/IndustrySection";
 import PortfolioSection    from "../components/sections/PortfolioSection";
